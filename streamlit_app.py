@@ -2128,6 +2128,7 @@ if __name__ == "__main__":
         comparison_page(df_enhanced)
     elif page == "simulator":
         simulator_page(df_enhanced, model, scaler, feature_names)
+        
 # ===============================================================================
 # PÁGINAS DA APLICAÇÃO
 # ===============================================================================
@@ -2292,4 +2293,5 @@ def dashboard_page(df, model, scaler, r2, rmse):
         <div class="insight-box">
             <div class="insight-title">🌱 Nutrição</div>
             O balanceamento NPK mostra potencial de incremento de <strong>15-20% na produtividade</strong> com ajustes precisos.
-
+        </div>
+        """, unsafe_allow_html=True)
