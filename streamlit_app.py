@@ -167,11 +167,7 @@ def main():
     # Dashboard Principal
     if page == "🏠 Dashboard":
         dashboard_page(df_enhanced, model, scaler, r2, rmse)
-    
-    # Análise Exploratória
-    elif page == "📊 Análise Exploratória":
-        eda_page(df_enhanced)
-    
+     
     # Predição
     elif page == "🤖 Predição":
         prediction_page(df_enhanced, model, scaler, feature_names)
@@ -232,20 +228,6 @@ def dashboard_page(df, model, scaler, r2, rmse):
         fig_corr.update_layout(title="Correlação com Produção", showlegend=False)
         st.plotly_chart(fig_corr, use_container_width=True)
     
-    # Mapa de calor
-    st.subheader("🌡️ Matriz de Correlação")
-    numeric_df = df.select_dtypes(include=[np.number])
-    corr_matrix = numeric_df.corr()
-    
-    fig_heatmap = go.Figure(data=go.Heatmap(
-        z=corr_matrix.values,
-        x=corr_matrix.columns,
-        y=corr_matrix.columns,
-        colorscale='RdBu',
-        zmid=0
-    ))
-    fig_heatmap.update_layout(title="Matriz de Correlação Entre Variáveis")
-    st.plotly_chart(fig_heatmap, use_container_width=True)
 
 def eda_page(df):
     """Página de análise exploratória"""
@@ -535,4 +517,5 @@ def show_footer():
 
 if __name__ == "__main__":
     main()
+
     show_footer()
