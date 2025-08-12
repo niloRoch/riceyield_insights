@@ -1,6 +1,6 @@
 # 🌾 Rice Production Analyzer
 
-Uma aplicação web interativa para análise e predição de produção de arroz usando Machine Learning.
+Uma análise e predição de produção de arroz usando Machine Learning.
 
 ## 🚀 Live Demo
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-url.streamlit.app)
@@ -35,7 +35,7 @@ Uma aplicação web interativa para análise e predição de produção de arroz
 ### Local
 ```bash
 # Clone o repositório
-git clone https://github.com/SEU_USUARIO/rice-production-analyzer.git
+git clone https://github.com/niloRoch/rice-production-analyzer.git
 cd rice-production-analyzer
 
 # Instale dependências
@@ -47,8 +47,7 @@ streamlit run streamlit_app.py
 
 ### Deploy
 - **Streamlit Cloud**: Deploy automático via GitHub
-- **Heroku**: `git push heroku main`
-- **Railway**: Conecte repositório GitHub
+
 
 ## 📊 Dataset
 
@@ -67,10 +66,9 @@ O projeto utiliza dados de:
 ## 👨‍💻 Autor
 
 **Seu Nome**
-- LinkedIn: [seu-linkedin](https://linkedin.com/in/seu-perfil)
-- GitHub: [seu-github](https://github.com/seu-usuario)
-- Email: seu.email@domain.com
+- LinkedIn: [seu-linkedin](https://www.linkedin.com/in/nilo-rocha-/)
+- GitHub: [seu-github](https://github.com/niloRoch)
+- Email: nilo.roch4@gmail.com
 
 ## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está sob a licença MIT. 
