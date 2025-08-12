@@ -2079,10 +2079,10 @@ if __name__ == "__main__":
         });
     }
     
-    // Executar após carregamento
-    setTimeout(addTooltips, 1000);
-    </script>
-    """, unsafe_allow_html=True)
+        # Executar após carregamento
+        setTimeout(addTooltips, 1000);
+        </script>
+        """, unsafe_allow_html=True)
         
         # Navegação com cards modernos
         page_options = {
@@ -2096,7 +2096,7 @@ if __name__ == "__main__":
         
         selected_page = st.radio("", list(page_options.keys()))
         page = page_options[selected_page]
-        
+
         # Informações do modelo
         st.markdown("---")
         st.markdown("### 🤖 Status do Modelo")
@@ -2293,3 +2293,4 @@ def dashboard_page(df, model, scaler, r2, rmse):
         <div class="insight-box">
             <div class="insight-title">🌱 Nutrição</div>
             O balanceamento NPK mostra potencial de incremento de <strong>15-20% na produtividade</strong> com ajustes precisos.
+
