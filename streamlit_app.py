@@ -1,6 +1,6 @@
 # ===============================================================================
 # APLICAÇÃO WEB STREAMLIT - ANÁLISE DE PRODUÇÃO DE ARROZ
-# Versão Corrigida e Otimizada para Deploy
+# Versão Corrigida - Deploy
 # ===============================================================================
 
 import streamlit as st
@@ -33,7 +33,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# CSS moderno e otimizado
+# CSS 
 st.markdown("""
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
@@ -1164,3 +1164,4 @@ if __name__ == "__main__":
             st.code(str(e))
             import traceback
             st.code(traceback.format_exc())
+
