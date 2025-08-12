@@ -2083,38 +2083,38 @@ if __name__ == "__main__":
     setTimeout(addTooltips, 1000);
     </script>
     """, unsafe_allow_html=True)
-        
-        # Navegação com cards modernos
-        page_options = {
-            "🏠 Dashboard Executivo": "dashboard",
-            "📊 Análise Exploratória": "eda",
-            "🤖 Preditor IA": "prediction",
-            "🔍 Insights Agronômicos": "insights",
-            "📈 Análise Comparativa": "comparison",
-            "📱 Simulador": "simulator"
-        }
-        
-        selected_page = st.radio("", list(page_options.keys()))
-        page = page_options[selected_page]
-        
-        # Informações do modelo
-        st.markdown("---")
-        st.markdown("### 🤖 Status do Modelo")
-        
-        col1, col2 = st.columns(2)
-        with col1:
-            st.metric("Acurácia", f"{r2:.1%}", f"+{(r2-0.8)*100:.1f}%" if r2 > 0.8 else "")
-        with col2:
-            st.metric("Erro (RMSE)", f"±{rmse:.0f}", "kg/ha")
-        
-        # Quick stats
-        st.markdown("### 📈 Quick Stats")
-        avg_production = df_enhanced['RICE_PRODUCTION'].mean()
-        max_production = df_enhanced['RICE_PRODUCTION'].max()
-        st.write(f"🌾 **Produção Média:** {avg_production:.0f} kg/ha")
-        st.write(f"🏆 **Produção Máxima:** {max_production:.0f} kg/ha")
-        st.write(f"📊 **Samples:** {len(df_enhanced)} observações")
+
+    # Navegação com cards modernos
+    page_options = {
+        "🏠 Dashboard Executivo": "dashboard",
+        "📊 Análise Exploratória": "eda",
+        "🤖 Preditor IA": "prediction",
+        "🔍 Insights Agronômicos": "insights",
+        "📈 Análise Comparativa": "comparison",
+        "📱 Simulador": "simulator"
+    }
     
+    selected_page = st.radio("", list(page_options.keys()))
+    page = page_options[selected_page]
+    
+    # Informações do modelo
+    st.markdown("---")
+    st.markdown("### 🤖 Status do Modelo")
+    
+    col1, col2 = st.columns(2)
+    with col1:
+        st.metric("Acurácia", f"{r2:.1%}", f"+{(r2-0.8)*100:.1f}%" if r2 > 0.8 else "")
+    with col2:
+        st.metric("Erro (RMSE)", f"±{rmse:.0f}", "kg/ha")
+    
+    # Quick stats
+    st.markdown("### 📈 Quick Stats")
+    avg_production = df_enhanced['RICE_PRODUCTION'].mean()
+    max_production = df_enhanced['RICE_PRODUCTION'].max()
+    st.write(f"🌾 **Produção Média:** {avg_production:.0f} kg/ha")
+    st.write(f"🏆 **Produção Máxima:** {max_production:.0f} kg/ha")
+    st.write(f"📊 **Samples:** {len(df_enhanced)} observações")
+
     # Roteamento de páginas
     if page == "dashboard":
         dashboard_page(df_enhanced, model, scaler, r2, rmse)
@@ -2128,7 +2128,6 @@ if __name__ == "__main__":
         comparison_page(df_enhanced)
     elif page == "simulator":
         simulator_page(df_enhanced, model, scaler, feature_names)
-
 # ===============================================================================
 # PÁGINAS DA APLICAÇÃO
 # ===============================================================================
@@ -2293,3 +2292,4 @@ def dashboard_page(df, model, scaler, r2, rmse):
         <div class="insight-box">
             <div class="insight-title">🌱 Nutrição</div>
             O balanceamento NPK mostra potencial de incremento de <strong>15-20% na produtividade</strong> com ajustes precisos.
+
