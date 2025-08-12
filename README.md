@@ -3,7 +3,7 @@
 Uma análise e predição de produção de arroz usando Machine Learning.
 
 ## 🚀 Live Demo
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-url.streamlit.app)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://rice-app-analyzer.streamlit.app/)
 
 ## 🎯 Funcionalidades
 
@@ -65,11 +65,13 @@ O projeto utiliza dados de:
 
 ## 👨‍💻 Autor
 
-**Seu Nome**
-- LinkedIn: [Nilo Rocha](https://www.linkedin.com/in/nilo-rocha-/)
-- GitHub: [niloRoch](https://github.com/niloRoch)
-- Email: nilo.roch4@gmail.com
+[![Website](https://img.shields.io/badge/Website-4c1d95?style=for-the-badge&logo=firefox&logoColor=a855f7)](https://www.nilorocha.tech)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nilo-rocha-)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/niloRoch)
+[![CV](https://img.shields.io/badge/Bold-312e81?style=for-the-badge&logo=readthedocs&logoColor=8b5cf6)](https://bold.pro/my/nilo-rocha)
+[![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:nilo.roch4@gmail.com)
 
 ## 📄 Licença
 Este projeto está sob a licença MIT. 
+
 
