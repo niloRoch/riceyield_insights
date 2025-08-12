@@ -1,6 +1,6 @@
 # ===============================================================================
 # APLICAÇÃO WEB STREAMLIT - ANÁLISE DE PRODUÇÃO DE ARROZ
-# Versão Corrigida - Deploy
+# Versão Corrigida e Otimizada para Deploy
 # ===============================================================================
 
 import streamlit as st
@@ -33,7 +33,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# CSS 
+# CSS moderno e otimizado
 st.markdown("""
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
@@ -1119,6 +1119,33 @@ def main():
     elif page == "analysis":
         analysis_page(df_enhanced)
 
+def show_footer():
+    """Footer da aplicação"""
+    st.markdown("---")
+    st.markdown("""
+    <div style="text-align: center; padding: 1.5rem; 
+                background: var(--card-bg); border-radius: 12px; margin: 2rem 0;">
+        <div style="margin-bottom: 1rem;">
+            <span style="font-size: 1.5rem; margin-right: 0.5rem;">🌾</span>
+            <strong style="color: var(--primary-color);">AgriTech Analytics</strong>
+        </div>
+        
+        <p style="color: #B0B0B0; margin: 0.8rem 0;">
+            Plataforma de análise agrícola inteligente powered by Machine Learning
+        </p>
+        
+        <div style="display: flex; justify-content: center; gap: 1.5rem; 
+                    margin: 1rem 0; flex-wrap: wrap;">
+            <small style="color: #00C851;">🤖 ML Predictive Model</small>
+            <small style="color: #00C851;">📊 Interactive Analytics</small>
+            <small style="color: #00C851;">⚡ Real-time Predictions</small>
+        </div>
+        
+        <small style="color: #666;">
+            © 2025 - Desenvolvido para otimização agrícola sustentável
+        </small>
+    </div>
+    """, unsafe_allow_html=True)
 
 # ===============================================================================
 # EXECUÇÃO DA APLICAÇÃO
@@ -1137,5 +1164,3 @@ if __name__ == "__main__":
             st.code(str(e))
             import traceback
             st.code(traceback.format_exc())
-
-
