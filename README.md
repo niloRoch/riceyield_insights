@@ -66,9 +66,10 @@ O projeto utiliza dados de:
 ## 👨‍💻 Autor
 
 **Seu Nome**
-- LinkedIn: [seu-linkedin](https://www.linkedin.com/in/nilo-rocha-/)
-- GitHub: [seu-github](https://github.com/niloRoch)
+- LinkedIn: [Nilo Rocha](https://www.linkedin.com/in/nilo-rocha-/)
+- GitHub: [niloRoch](https://github.com/niloRoch)
 - Email: nilo.roch4@gmail.com
 
 ## 📄 Licença
 Este projeto está sob a licença MIT. 
+
