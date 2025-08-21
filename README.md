@@ -1,4 +1,4 @@
-# 🌾 Rice Production Analyzer
+# 🌾 Rice Production Analyzer - riceyield_insights
 
 Uma análise e predição de produção de arroz usando Machine Learning.
 
@@ -73,5 +73,6 @@ O projeto utiliza dados de:
 
 ## 📄 Licença
 Este projeto está sob a licença MIT. 
+
 
 
