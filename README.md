@@ -45,10 +45,6 @@ pip install -r requirements.txt
 streamlit run streamlit_app.py
 ```
 
-### Deploy
-- **Streamlit Cloud**: Deploy automático via GitHub
-
-
 ## 📊 Dataset
 
 O projeto utiliza dados de:
@@ -63,7 +59,7 @@ O projeto utiliza dados de:
 - **Features importantes**: Nitrogênio, precipitação, tipo de solo
 - **Insights**: Fórmula ótima para maximizar produção
 
-## 👨‍💻 Autor
+## 👨‍💻 Contato
 
 [![Website](https://img.shields.io/badge/Website-4c1d95?style=for-the-badge&logo=firefox&logoColor=a855f7)](https://www.nilorocha.tech)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nilo-rocha-)
@@ -73,6 +69,7 @@ O projeto utiliza dados de:
 
 ## 📄 Licença
 Este projeto está sob a licença MIT. 
+
 
 
 
