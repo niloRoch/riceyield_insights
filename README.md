@@ -2,7 +2,7 @@
 
 Uma análise e predição de produção de arroz usando Machine Learning.
 
-## 🚀 Live Demo
+## 🚀 Demo
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://rice-app-analyzer.streamlit.app/)
 
 ## 🎯 Funcionalidades
@@ -69,6 +69,7 @@ O projeto utiliza dados de:
 
 ## 📄 Licença
 Este projeto está sob a licença MIT. 
+
 
 
 
